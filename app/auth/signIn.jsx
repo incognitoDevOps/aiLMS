@@ -11,7 +11,7 @@ import React from "react";
 import Colors from "./../../constant/Colors";
 import { useRouter } from "expo-router";
 
-const signup = () => {
+const signIn = () => {
     const router = useRouter()
   return (
     <View
@@ -36,9 +36,8 @@ const signup = () => {
           fontFamily: "outfit-bold",
         }}
       >
-        Create New Account
+        Welcome Back
       </Text>
-      <TextInput placeholder="Full Name" style={styles.textInput} />
       <TextInput placeholder="Email" style={styles.textInput} />
       <TextInput
         placeholder="Password"
@@ -62,7 +61,7 @@ const signup = () => {
             textAlign: "center",
           }}
         >
-          Create Account
+          Sing In
         </Text>
       </TouchableOpacity>
       <View style={{
@@ -79,14 +78,14 @@ const signup = () => {
           style={{
             color:Colors.PRIMARY,
             fontFamily:"outfit-bold"
-          }}>Sign In Here</Text>
+          }}>Sign Up Here</Text>
         </Pressable>
       </View>
     </View>
   );
 };
 
-export default signup;
+export default signIn;
 
 const styles = StyleSheet.create({
   textInput: {
