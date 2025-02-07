@@ -29,8 +29,8 @@ export default function Index() {
       >
         <Text
           style={{
-            fontSize: 24,
-            fontWeight: "bold",
+            fontSize: 20,
+            fontFamily:"outfit-bold",
             textAlign: "center",
             color: Colors.WHITE,
           }}
@@ -44,6 +44,7 @@ export default function Index() {
             marginTop:20,
             textAlign: "center",
             color: Colors.WHITE,
+            fontFamily:"outfit"
           }}
         >
           Transform your ideas into engaging educational content, effortlessly with AI! 📚🤖
@@ -70,6 +71,8 @@ const styles = StyleSheet.create({
   },
   buttonText:{
     textAlign:"center",
-    fontSize: 18
+    fontSize: 18,
+    fontFamily:"outfit"
+
   }
 })
